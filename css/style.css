@@ -52,3 +52,6 @@ footer{flex-direction:column;gap:8px}
 @media(max-width:900px){.grid.three{grid-template-columns:1fr}}
 
 .nav nav a.gh{display:inline-flex;align-items:center;color:var(--text)}.nav nav a.gh:hover{color:var(--accent)}
+
+.tagline{font:600 20px/1.2 var(--mono);color:var(--accent);letter-spacing:-.3px;margin:0 0 14px}
+.shot{margin:18px 0 22px}.shot img{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:10px}.shot figcaption{font-size:12.5px;color:var(--muted);margin-top:8px}
