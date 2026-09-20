@@ -44,7 +44,7 @@ This is not a security scanner. NVIDIA's [SkillSpector](https://github.com/NVIDI
 
 ## Rechecks and corrections
 
-Open an issue on this repository with your repo name. We re-run the same pipeline against your current commit and update the row with the new commit hash. The old row stays visible with its date. Free.
+Open an issue on [skill-dash](https://github.com/48Nauts-Operator/skill-dash) with your repo name. We re-run the same pipeline against your current commit and update the row with the new commit hash. The old row stays visible with its date. Free.
 
 ## Repository
 
