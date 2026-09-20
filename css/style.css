@@ -32,3 +32,15 @@ g.node{cursor:pointer}g.node:hover rect,g.node:focus-visible rect{stroke:var(--a
 #node-dialog .dialog-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}#node-dialog h3{margin:0;font-size:17px}#node-dialog h4{margin:14px 0 6px;font:10px var(--mono);letter-spacing:1.4px;color:#b39a85;text-transform:uppercase}#nd-close{border:0;background:none;color:var(--muted);font-size:24px;cursor:pointer}
 #node-dialog ul{list-style:none;margin:0;padding:0;max-height:46vh;overflow:auto;border:1px solid var(--border);border-radius:8px}#node-dialog li{padding:7px 10px;border-bottom:1px solid #1f1a17;font-size:12.5px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}#node-dialog li:last-child{border:0}#node-dialog li.more{color:var(--muted)}
 .tag-ok,.tag-no,.tag-mirror{font:10px var(--mono);border:1px solid;border-radius:4px;padding:1px 6px;margin-left:auto}.tag-ok{color:var(--teal);border-color:#2f4a45}.tag-no{color:var(--red);border-color:#6b3a3f}.tag-mirror{color:var(--blue);border-color:#2c3f5a}
+
+@media(max-width:700px){
+.nav{position:static;flex-direction:column;align-items:stretch;gap:10px;padding:12px 16px}.nav nav{flex-wrap:nowrap;overflow-x:auto;gap:16px;padding-bottom:4px;scrollbar-width:none}.nav nav::-webkit-scrollbar{display:none}.nav nav a{white-space:nowrap;font-size:13px}
+.hero{padding-top:36px}h1{font-size:30px;letter-spacing:-.8px}h2{font-size:22px}.lede{font-size:16px}section{padding:40px 0 8px}
+.stats{grid-template-columns:repeat(2,1fr)}.stat{border-right:1px solid var(--border);border-top:1px solid var(--border)}.stat:nth-child(-n+2){border-top:0}.stat:nth-child(even){border-right:0}.stat:nth-child(3){border-right:1px solid var(--border)}.stat b{font-size:22px}
+.radars{grid-template-columns:1fr 1fr;gap:8px}.radar figcaption b{font-size:11px}
+.flow{padding:10px 6px 6px}.flow svg{min-width:700px}
+#node-dialog{padding:16px 14px}#node-dialog li{font-size:12px}
+table{font-size:12px}td,th{padding:9px 8px}table.safety td:nth-child(6){min-width:260px}
+footer{flex-direction:column;gap:8px}
+}
+@media(max-width:420px){.radars{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}}
