@@ -50,3 +50,5 @@ footer{flex-direction:column;gap:8px}
 
 .grid.three{grid-template-columns:repeat(3,1fr)}.run .card .eyebrow{margin-bottom:8px}.run .card p{margin:0 0 10px}.run .card .why{color:#b8ada3;border-top:1px solid var(--border);padding-top:10px;margin:12px 0 0}.run .card .why b{color:var(--text)}.run pre{max-width:720px}
 @media(max-width:900px){.grid.three{grid-template-columns:1fr}}
+
+.nav nav a.gh{display:inline-flex;align-items:center;color:var(--text)}.nav nav a.gh:hover{color:var(--accent)}
