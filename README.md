@@ -44,11 +44,11 @@ This is not a security scanner. NVIDIA's [SkillSpector](https://github.com/NVIDI
 
 ## Rechecks and corrections
 
-Open an issue with your repo name. We re-run the same pipeline against your current commit and update the row with the new commit hash. The old row stays visible with its date. Free.
+Open an issue on this repository with your repo name. We re-run the same pipeline against your current commit and update the row with the new commit hash. The old row stays visible with its date. Free.
 
 ## Repository
 
-This repo is the built site: static HTML, one stylesheet, a few lines of JavaScript for table sorting, no framework, no build step. The pipeline in the skill-dash project generates it from the data files; nobody edits `index.html` by hand. Source of truth is a Forgejo repo at 48Nauts; this GitHub repo is the deploy mirror for GitHub Pages.
+This repo is the built site and its data: static HTML, one stylesheet, a few lines of JavaScript for table sorting, no framework, no build step. The pipeline that produces the data and generates `index.html` (crawler, static pre-scan, Jev judge, local dashboard) is a separate project, skill-dash, being prepared for release; nobody edits `index.html` by hand. Source of truth is a Forgejo repo at 48Nauts; this GitHub repo is the deploy mirror for GitHub Pages.
 
 An experiment by [48Nauts](https://48nauts.com). Judged by [Jev](https://typesafe.ai). Not affiliated with GitHub, Anthropic, NVIDIA or any repo listed.
 
