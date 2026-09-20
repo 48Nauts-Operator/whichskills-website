@@ -48,7 +48,7 @@ Open an issue on this repository with your repo name. We re-run the same pipelin
 
 ## Repository
 
-This repo is the built site and its data: static HTML, one stylesheet, a few lines of JavaScript for table sorting, no framework, no build step. The pipeline that produces the data and generates `index.html` (crawler, static pre-scan, Jev judge, local dashboard) is a separate project, skill-dash, being prepared for release; nobody edits `index.html` by hand. Source of truth is a Forgejo repo at 48Nauts; this GitHub repo is the deploy mirror for GitHub Pages.
+This repo is the built site and its data: static HTML, one stylesheet, a few lines of JavaScript for table sorting, no framework, no build step. The pipeline that produces the data and generates `index.html` (crawler, static pre-scan, Jev judge, local dashboard) is [skill-dash](https://github.com/48Nauts-Operator/skill-dash); nobody edits `index.html` by hand. Source of truth is a Forgejo repo at 48Nauts; this GitHub repo is the deploy mirror for GitHub Pages.
 
 An experiment by [48Nauts](https://48nauts.com). Judged by [Jev](https://typesafe.ai). Not affiliated with GitHub, Anthropic, NVIDIA or any repo listed.
 
