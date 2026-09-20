@@ -4,15 +4,15 @@
 
 Live: https://whichskills.dev
 
-We pulled the 200 most-starred GitHub repos that publish `SKILL.md` files, read all of them the same way, and published every number with a link to the file at the commit we read.
+We pulled the 200 most-starred GitHub repos that publish `SKILL.md` files, read all of them the same way, and published every number with a link to the file at the commit we read. Not a scanner. A census with receipts.
 
 Snapshot 2026-09-20: 157 repos with skills, 18,041 skills, 557 plugin manifests, 36 % byte-identical copies, 545 flagged bodies read by Jev, 0 skills that read as malware aimed at the installing user.
 
 ## What the page shows
 
-- **Findings.** Four things the snapshot says: autonomy overrides rather than malware, live payloads shipped as teaching material, a third of skills are copies, stars measure the author and not the files.
-- **Fingerprints.** The twelve most-starred repos as radar shapes over the corpus median: copied, mirrored, sourced, flagged, risk, hooks, templated.
-- **War of the Skill Clones.** Who copied whom, as a flow graph and tables. Same-owner mirrors are labelled as such; attribution per copy is shown.
+- **Findings.** Four things the snapshot says. Autonomy overrides rather than malware. Live payloads shipped as teaching material. A third of skills are copies. Stars measure the author, not the files.
+- **Fingerprints.** The twelve most-starred repos as radar shapes over the corpus median, on seven traits.
+- **War of the Skill Clones.** Who copied whom, as a flow graph. Click a repo for its bodies and whether each copy credits its source. Same-owner mirrors are labelled.
 - **Safety read.** Every body Jev scored 1.5 of 3 or above, its risk distribution, the kind of risk, and a human category after opening the file at the pinned commit. Nothing on the page is labelled malicious.
 - **The census.** All 157 repos, sortable.
 - **Method.** Every step, the severity weights, and the verbatim Jev questions with their criteria.
@@ -27,7 +27,7 @@ Snapshot 2026-09-20: 157 repos with skills, 18,041 skills, 557 plugin manifests,
 6. A person opens every body at 1.5 or above and writes one category and one sentence.
 7. Provenance by normalised body hash: first-party registry first, else earliest first-commit date. Attribution by the copy's own text.
 
-Not read: binaries, images, anything fetched at runtime, repos outside the top 200. A clean row means nothing was found in the text we read.
+Not read: binaries, images, anything fetched at runtime, repos outside the top 200. A clean row means we found nothing in the text we read.
 
 This is not a security scanner. NVIDIA's [SkillSpector](https://github.com/NVIDIA/skillspector) and others do that with far more rules. What this page adds is provenance, duplication, and the receipts.
 
@@ -48,7 +48,7 @@ Open an issue with your repo name. We re-run the same pipeline against your curr
 
 ## Repository
 
-This repo is the built site: static HTML, one stylesheet, a few lines of JavaScript for table sorting, no framework, no build step. It is generated from the data files by the pipeline in the skill-dash project; `index.html` is never edited by hand. Source of truth is a Forgejo repo at 48Nauts; this GitHub repo is the deploy mirror for GitHub Pages.
+This repo is the built site: static HTML, one stylesheet, a few lines of JavaScript for table sorting, no framework, no build step. The pipeline in the skill-dash project generates it from the data files; nobody edits `index.html` by hand. Source of truth is a Forgejo repo at 48Nauts; this GitHub repo is the deploy mirror for GitHub Pages.
 
 An experiment by [48Nauts](https://48nauts.com). Judged by [Jev](https://typesafe.ai). Not affiliated with GitHub, Anthropic, NVIDIA or any repo listed.
 
